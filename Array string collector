@@ -1,0 +1,35 @@
+// This is a javascript string collector that collects every string from an array in an object and creates a new object with the strings. 
+// If the string is repeated it adds to the counter
+
+const object = {
+  array: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+};
+
+const newObject = {};
+for (const current of object.array.) {
+  if (newObject[current] > 0) {
+    newObject[current]++;
+  } else {
+    newObject[current] = 0;
+    newObject[current]++;
+  }
+}
+
+////////////////
+// Example:
+////////////////
+
+const game = {
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+};
+
+const scorers = {};
+for (const current of game.scored) {
+  if (scorers[current] > 0) {
+    scorers[current]++;
+  } else {
+    scorers[current] = 0;
+    scorers[current]++;
+  }
+}
+// Prints {Lewandoski: 2, Gnarby: 1, Hummels: 1}
